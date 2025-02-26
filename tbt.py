@@ -18,8 +18,10 @@ from langchain_openai import OpenAIEmbeddings
 # from langchain.retrievers import FAISSRetriever
 ####   retrieved_docs = retriever.get_relevant_documents(query)
 from langchain.text_splitter import MarkdownHeaderTextSplitter, RecursiveCharacterTextSplitter
-from langchain.vectorstores import FAISS
-from langchain.document_loaders import TextLoader
+# from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS
+# from langchain.document_loaders import TextLoader
+from langchain_community.document_loaders import TextLoader
 from langchain.docstore.document import Document
 import os
 import getpass
@@ -33,7 +35,7 @@ from langchain.docstore.document import Document
 import openai
 from openai import OpenAI
 import tiktoken
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 from datetime import datetime
 
 
